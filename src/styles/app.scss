@@ -1,0 +1,185 @@
+@import 'var.scss';
+@import 'var.light.scss';
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--APP_FontSize);
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: var(--App_Background);
+  color: var(--APP_HtmlColor);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+.u-text-center {
+  text-align: center !important;
+}
+.u-text-right {
+  text-align: right !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--APP_Scroller-Background);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button,
+::-webkit-resizer {
+  display: none;
+}
+
+a {
+  color: var(--APP_AHerfColor);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.o-input {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: inherit;
+  outline: none;
+  border: unset;
+  color: inherit;
+  font: inherit;
+}
+
+@mixin button {
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.1s;
+  margin: 0;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  color: #606266;
+  font-weight: 500;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+}
+.o-button {
+  @include button();
+}
+.o-button--success {
+  @include button();
+  color: #000;
+  background-color: #67c23a;
+  border-color: #67c23a;
+}
+.o-button,
+.o-button--success {
+  &:hover {
+    background: #85ce61;
+    border-color: #85ce61;
+  }
+  &:active {
+    background: #5daf34;
+    border-color: #5daf34;
+  }
+  &.is-round {
+    border-radius: 100px;
+    padding: 12px 23px;
+  }
+}
+
+.o-loading {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  @keyframes sk-bounce {
+    0%,
+    100% {
+      transform: scale(0);
+      -webkit-transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: var(--APP_Loading-Color);
+    width: 100%;
+    height: 100%;
+    animation: sk-bounce 1s infinite ease-in-out;
+    content: ' ';
+  }
+
+  &::after {
+    animation-delay: -0.5s;
+  }
+}
+
+.o-skeleton-loader {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    @keyframes loading {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    animation: loading 1.5s infinite;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.02),
+      transparent
+    );
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+  }
+}
+
+.o-flex-expend {
+  flex: 1;
+}

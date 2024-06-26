@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Starflare</title>
+  <meta name="description" content="Starflare helps you manage your GitHub stars simply and efficiently">
+  <meta name="google-site-verification" content="s6klH6Yf4SHW_lJfaES4jetsREBnaRW76-KDXeXAS7Q" />
+  <meta name="keywords"
+    content="GitHub Star Management, GitHub Tools, GitHub Star Tracker, Starflare GitHub, Developer Tools, GitHub Repository Organizer">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Starflare",
+      "description": "A tool to manage your GitHub Stars, helping you to manage your GitHub stars simply and efficiently.",
+      "applicationCategory": "DeveloperTools",
+      "operatingSystem": "All"
+    }
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but Starflare doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <script>
+    var theme = localStorage.appTheme
+    if (!theme) {
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      theme = prefersDark.matches ? 'dark' : 'light'
+    }
+    localStorage.appTheme = theme
+    document.documentElement.setAttribute('data-theme', theme)
+    var themeColorMeta = document.querySelector('meta[name=theme-color]')
+    themeColorMeta.content = theme === 'dark' ? '#141419' : "#f3f3f3"
+  </script>
+  <div id="app"></div>
+
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

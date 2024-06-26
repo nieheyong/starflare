@@ -1,0 +1,155 @@
+:root {
+  // app
+  --APP_BrandColor: #e45009;
+  --App_Background: #141419;
+  --APP_FontSize: 13px;
+  --APP_HtmlColor: #ccc;
+  --APP_AHerfColor: var(--APP_BrandColor);
+  --APP_Scroller-Background: rgba(255, 255, 255, 0.1);
+  --APP_Loading-Color: rgba(255, 255, 255, 0.05);
+  // side menu
+  --SideMenu_Container_Background: #141419;
+  --SideMenu_Avatar_Background: rgba(0, 0, 0, 0.2);
+  --SideMenu_LoginName_Color: #ccc;
+  // menu item
+  --SideMenu_Menu_Color: #999;
+  --SideMenu_Menu_Color__Hover: #fff;
+  --SideMenu_Menu_Color__Active: #fff;
+
+  --SideMenu_Menu_Background: transparent;
+  --SideMenu_Menu_Background__Hover: transparent;
+  --SideMenu_Menu_Background__Active: rgba(255, 255, 255, 0.03);
+
+  --SideMenu_Menu_BorderColor: transparent;
+  --SideMenu_Menu_BorderColor__Hover: transparent;
+  --SideMenu_Menu_BorderColor__Active: rgba(255, 255, 255, 0.03);
+
+  --SideMenu_MenuIcon_Color: var(--SideMenu_Menu_Color);
+  --SideMenu_MenuIcon_Color__Hover: #fff;
+  --SideMenu_MenuIcon_Color__Active: #fff;
+
+  --SideMenu_MenuIcon_Background: rgba(255, 255, 255, 0.1);
+  --SideMenu_MenuIcon_Background__Hover: rgba(255, 255, 255, 0.2);
+  --SideMenu_MenuIcon_Background__Active: var(--APP_BrandColor);
+  // tag
+  --SideMenu_Tag_Color: #666;
+  --SideMenu_Tag_Color__Hover: var(--SideMenu_Menu_Color__Hover);
+  --SideMenu_Tag_Color__Active: var(--SideMenu_Menu_Color__Active);
+
+  --SideMenu_Tag_Background: transparent;
+  --SideMenu_Tag_Background__Hover: transparent;
+  --SideMenu_Tag_Background__Active: var(--SideMenu_Menu_Background__Active);
+
+  --SideMenu_Tag_BorderColor: transparent;
+  --SideMenu_Tag_BorderColor__Hover: transparent;
+  --SideMenu_Tag_BorderColor__Active: var(--SideMenu_Menu_BorderColor__Active);
+
+  --SideMenu_TagInput_Color: #fff;
+  --SideMenu_TagInput_Background: #000;
+
+  --SideMenu_TagToolButton_Color: #666;
+  --SideMenu_TagToolButton_Color__Hover: #fff;
+
+  // language-item
+  --SideMenu_LanguageItem_Color: var(--SideMenu_Tag_Color);
+  --SideMenu_LanguageItem_Color__Hover: var(--SideMenu_Menu_Color__Hover);
+  --SideMenu_LanguageItem_Color__Active: var(--SideMenu_Menu_Color__Active);
+
+  --SideMenu_LanguageItem_Background: transparent;
+  --SideMenu_LanguageItem_Background__Hover: transparent;
+  --SideMenu_LanguageItem_Background__Active: var(
+    --SideMenu_Menu_Background__Active
+  );
+
+  --SideMenu_LanguageItem_BorderColor: transparent;
+  --SideMenu_LanguageItem_BorderColor__Hover: transparent;
+  --SideMenu_LanguageItem_BorderColor__Active: var(
+    --SideMenu_Menu_BorderColor__Active
+  );
+
+  // SyncButton
+  --SideMenu_SyncButton_Color: #666;
+  --SideMenu_SyncButton_Color__Hover: #fff;
+
+  --SideMenu_SyncButton_Background: transparent;
+  --SideMenu_SyncButton_Background__Hover: rgba(255, 255, 255, 0.1);
+
+  --SideMenu_SyncButton_BorderColor: rgba(255, 255, 255, 0.1);
+
+  // IconButton
+  --SideMenu_IconButton_Color: #666;
+  --SideMenu_IconButton_Color__Hover: #fff;
+
+  --SideMenu_IconButton_Background: rgba(255, 255, 255, 0.1);
+  --SideMenu_IconButton_Background__Hover: rgba(255, 255, 255, 0.2);
+
+  //repo List
+  --RepoList_Background: #232323;
+  --RepoList_Search_Color: #fff;
+  --RepoList_Search_Background: #19191d;
+
+  //repo Card
+  --RepoCard_Background: transparent;
+  --RepoCard_Background__Hover: transparent;
+  --RepoCard_Background__Active: #1e1e1e;
+
+  --RepoCard_Indictor_Background: transparent;
+  --RepoCard_Indictor_Background__Hover: rgba(255, 255, 255, 0.1);
+  --RepoCard_Indictor_Background__Active: var(--APP_BrandColor);
+
+  --RepoCard_Title_Color: #eee;
+  --SideMenu_Title_Color__Hover: var(--APP_BrandColor);
+
+  --RepoCard_Body_Color: #888;
+  --RepoCard_Foot_Color: var(--RepoCard_Body_Color);
+
+  // repo card tag
+  --RepoCard_TagTogger_Color: #888;
+  --RepoCard_TagTogger_Color__Hover: #fff;
+
+  --RepoCard_Tag_Color: #888;
+  --RepoCard_Tag_Color__Hover: #fff;
+  --RepoCard_Tag_Color__Active: #fff;
+
+  --RepoCard_Tag_Background: transparent;
+  --RepoCard_Tag_Background__Hover: transparent;
+  --RepoCard_Tag_Background__Active: var(--APP_BrandColor);
+
+  --RepoCard_Tag_BorderColor: #888;
+  --RepoCard_Tag_BorderColor__Hover: #888;
+  --RepoCard_Tag_BorderColor__Active: var(--APP_BrandColor);
+
+  // repo card Action Button
+  --RepoCard_Tag_CancleButton_Color: #ccc;
+  --RepoCard_Tag_CancleButton_Color__Hover: #fff;
+
+  --RepoCard_Tag_CancleButton_Background: #404040;
+  --RepoCard_Tag_CancleButton_Background__Hover: #555;
+
+  --RepoCard_Tag_CancleButton_BorderColor: transparent;
+  --RepoCard_Tag_CancleButton_BorderColor__Hover: transparent;
+
+  --RepoCard_Tag_ConfirmButton_Color: #ccc;
+  --RepoCard_Tag_ConfirmButton_Color__Hover: #fff;
+
+  --RepoCard_Tag_ConfirmButton_Background: #3a7500;
+  --RepoCard_Tag_ConfirmButton_Background__Hover: #4a9600;
+
+  --RepoCard_Tag_ConfirmButton_BorderColor: transparent;
+  --RepoCard_Tag_ConfirmButton_BorderColor__Hover: transparent;
+
+  // detail view
+  --RpoeDetail_Background: #1e1e1e;
+
+  --RpoeDetail_IconButton_Color: #666;
+  --RpoeDetail_IconButton_Color__Hover: #fff;
+
+  --ReadMe-Color: var(--APP_HtmlColor);
+  --ReadMe-Pre-Color: #d1e8ff;
+  --ReadMe-Pre-Background: #151515;
+  --ReadMe-Blockquote-Color: var(--ReadMe-Color);
+  --ReadMe-Hr-BorderColor: rgba(255, 255, 255, 0.05);
+  // color: #dfadff;
+  // color: #ff774b;
+  --ReadMe-AHref-Color: var(--APP_BrandColor);
+}

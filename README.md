@@ -7,6 +7,8 @@ A web app helps you manage your GitHub stars simply and efficiently <https://sta
 ![dark theme](./src/assets/img/dark.png)
 ![light theme](./src/assets/img/light.png)
 
+[video](https://github.com/nieheyong/starflare/assets/9368693/81e3a5d3-6c2c-4b87-9897-22fe9c02ca7b)
+
 ## Features
 
 1. Create tag

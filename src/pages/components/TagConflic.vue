@@ -136,7 +136,7 @@
         <div class="indicator"></div>Delete cloud data and sync local data to cloud
       </div>
       <div class="tool-bar">
-        <div class="btn" @click="close">{{loading?"...":"Cancle"}}</div>
+        <div class="btn" @click="close">{{loading?"...":"Cancel"}}</div>
         <div class="btn" @click="confirm">{{loading?"...":"Confirm"}}</div>
       </div>
     </div>

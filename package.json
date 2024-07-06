@@ -41,6 +41,10 @@
     "typescript": "^5.4.4",
     "vue-template-compiler": "^2.6.10"
   },
+  "engines": {
+    "node": "^16",
+    "yarn": "^1.22"
+  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}

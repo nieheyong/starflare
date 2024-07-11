@@ -1,4 +1,3 @@
-
 <style lang="scss">
 .c-home-page {
   display: flex;
@@ -88,7 +87,7 @@
 </template>
 
 <script>
-import { delay, getPageFromLinkStr } from '../../common/utils'
+import { delay, getPageFromLinkStr, trackEvent } from '../../common/utils'
 import * as githubApi from '../../common/api/githubApi'
 import SideMenu from './SideMenu/SideMenu'
 import RepoList from './RepoList/RepoList'
@@ -123,6 +122,7 @@ export default {
   },
   methods: {
     repoSelect(repo) {
+      trackEvent('repoSelect')
       this.activeRepo = repo
     },
     closeDetail() {

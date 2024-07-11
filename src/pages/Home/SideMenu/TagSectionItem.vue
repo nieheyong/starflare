@@ -115,7 +115,7 @@
 </template>
 
 <script>
-import { delay } from '../../../common/utils'
+import { delay, trackEvent } from '../../../common/utils'
 export default {
   props: {
     active: {},
@@ -160,6 +160,7 @@ export default {
       }, 4000)
     },
     confirmDelete() {
+      trackEvent('deleteTag')
       this.$store.dispatch('tag/removeTag', this.data)
     },
     async startEdit() {

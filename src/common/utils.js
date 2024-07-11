@@ -34,13 +34,13 @@ export const openWindowCenter = (url, title, w, h) => {
   var width = window.innerWidth
     ? window.innerWidth
     : document.documentElement.clientWidth
-    ? document.documentElement.clientWidth
-    : screen.width
+      ? document.documentElement.clientWidth
+      : screen.width
   var height = window.innerHeight
     ? window.innerHeight
     : document.documentElement.clientHeight
-    ? document.documentElement.clientHeight
-    : screen.height
+      ? document.documentElement.clientHeight
+      : screen.height
 
   var systemZoom = width / window.screen.availWidth
   var left = (width - w) / 2 / systemZoom + dualScreenLeft
@@ -49,13 +49,13 @@ export const openWindowCenter = (url, title, w, h) => {
     url,
     title,
     'scrollbars=yes, width=' +
-      w / systemZoom +
-      ', height=' +
-      h / systemZoom +
-      ', top=' +
-      top +
-      ', left=' +
-      left
+    w / systemZoom +
+    ', height=' +
+    h / systemZoom +
+    ', top=' +
+    top +
+    ', left=' +
+    left
   )
 
   // Puts focus on the newWindow
@@ -86,7 +86,12 @@ export function downloadString(text, fileType, fileName) {
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
-  setTimeout(function() {
+  setTimeout(function () {
     URL.revokeObjectURL(a.href)
   }, 1500)
+}
+
+
+export function trackEvent(eventName, props = {}) {
+  gtag('event', eventName, props)
 }

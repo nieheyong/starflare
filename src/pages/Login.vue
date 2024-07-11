@@ -72,8 +72,18 @@
         <SvgIcon icon="github-fill" class="button__icon" />Sign in with GitHub
       </button>
 
-      <img v-if="appTheme==='light'" src="../assets/img/light.png" class="demo-img" alt="github-logo" />
-      <img v-else src="../assets/img/dark.png" class="demo-img" alt="github-logo" />
+      <img
+        v-if="appTheme === 'light'"
+        src="../assets/img/light.png"
+        class="demo-img"
+        alt="github-logo"
+      />
+      <img
+        v-else
+        src="../assets/img/dark.png"
+        class="demo-img"
+        alt="github-logo"
+      />
     </div>
   </div>
 </template>
@@ -84,6 +94,7 @@ import * as api from '../common/api/api'
 import * as githubApi from '../common/api/githubApi'
 import { openWindowCenter, AuthToken, delay } from '../common/utils'
 import { mapState } from 'vuex'
+import { trackEvent } from '../common/utils'
 
 export default {
   data() {
@@ -129,6 +140,7 @@ export default {
         const user = await githubApi.getLoginUser()
         this.$store.commit('common/setUserInfo', user.data)
         this.$router.replace('/home')
+        trackEvent('login', { method: 'github' })
         await delay(500)
       } catch (e) {
         console.log(e)

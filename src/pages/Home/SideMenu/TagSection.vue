@@ -86,6 +86,7 @@ import { mapState } from 'vuex'
 import Draggable from 'vuedraggable'
 import MenuItem from './MenuItem'
 import TagSectionItem from './TagSectionItem'
+import { trackEvent } from '../../../common/utils'
 
 export default {
   components: {
@@ -140,6 +141,7 @@ export default {
       this.managerTag = false
     },
     addTag(name) {
+      trackEvent('addTag')
       this.addingTag = false
       const exist = this.tags.find(item => item.name === name)
       if (!exist && name) {

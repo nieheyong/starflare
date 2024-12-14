@@ -38,8 +38,8 @@ Starflare 可以轻松部署到 Cloudflare Pages。请按照以下步骤操作�
     *   点击 "New OAuth App"。
     *   填写以下详细信息（将占位符替换为您自己的信息）：
         *   **Application name:** `Starflare`（或您选择的名称）
-        *   **Homepage URL:** `https://<您的用户名>.github.io/starflare`（如果您有自定义域名，则使用您的自定义域名，将“您的用户名”替换为您的 GitHub 用户名）
-        *   **Authorization callback URL:** `https://<您的用户名>.github.io/starflare/#/login`（将“您的用户名”替换为您的 GitHub 用户名）
+        *   **Homepage URL:** `您的自定义域名`
+        *   **Authorization callback URL:** `您的自定义域名/#/login`
     *   点击 "Register application"。
     *   复制 **Client ID** 并生成一个新的 **Client Secret**。您在下一步中将需要这些信息。
 

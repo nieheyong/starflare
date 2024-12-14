@@ -39,8 +39,8 @@ Starflare can be easily deployed to Cloudflare Pages. Follow these steps:
     *   Click "New OAuth App".
     *   Fill in the following details (replace placeholders with your information):
         *   **Application name:** `Starflare` (or a name of your choice)
-        *   **Homepage URL:** `https://<your-username>.github.io/starflare` (or your custom domain if you have one, replace your-username with your github username)
-        *   **Authorization callback URL:** `https://<your-username>.github.io/starflare/#/login` (replace your-username with your github username)
+        *   **Homepage URL:** `your custom domain` 
+        *   **Authorization callback URL:** `your custom domain/#/login` 
     *   Click "Register application".
     *   Copy the **Client ID** and generate a new **Client Secret**. You'll need these in the next step.
 

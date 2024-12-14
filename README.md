@@ -68,32 +68,9 @@ Starflare can be easily deployed to Cloudflare Pages. Follow these steps:
     *   In your forked repository, edit the file `main/.env`.
     *   Update the `VUE_APP_CLIENT_ID` values with your GitHub OAuth App's credentials.
 
-6. **Deploy and Enjoy!**
+6. **Deploy 和 Enjoy!**
     *   Commit and push the changes to your forked repository. Cloudflare Pages will automatically build and deploy your Starflare instance.
 
-## Local Development 🛠️
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/nieheyong/starflare.git
-    ```
-
-2. Install dependencies:
-    ```bash
-    cd starflare
-    yarn install
-    ```
-
-3. Create a `.env` file in the `main` directory and add your GitHub OAuth credentials:
-    ```
-    VITE_CLIENT_ID=your_client_id
-    VITE_CLIENT_SECRET=your_client_secret
-    ```
-
-4. Start the development server:
-    ```bash
-    yarn dev
-    ```
 
 ## Similar Projects 🤝
 

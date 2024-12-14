@@ -1,12 +1,13 @@
 # ✨ Starflare
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nieheyong/starflare)
-[![License](https://img.shields.io/github/license/nieheyong/starflare)](https://github.com/nieheyong/starflare/blob/main/LICENSE)
+
 [![Stars](https://img.shields.io/github/stars/nieheyong/starflare)](https://github.com/nieheyong/starflare/stargazers)
 [![Forks](https://img.shields.io/github/forks/nieheyong/starflare)](https://github.com/nieheyong/starflare/network/members)
 [![Issues](https://img.shields.io/github/issues/nieheyong/starflare)](https://github.com/nieheyong/starflare/issues)
 
-Starflare is a sleek and efficient web application that empowers you to manage your GitHub stars with ease. 🌟 Organize, search, and discover your starred repositories effortlessly. Try it out now at [starflare.app](https://starflare.app)!
+[中文README.md](README_CN.md)
+
+Starflare is a sleek 和 efficient web application that empowers you to manage your GitHub stars with ease. 🌟 Organize, search, 和 discover your starred repositories effortlessly. Try it out now at [starflare.app](https://starflare.app)!
 
 > ⚠️ **Important Note on Data Persistence:** Starflare currently stores data within your browser's local storage. This means that clearing your browser data or using a different browser/device will result in data loss. To ensure your data's longevity, we highly recommend regularly exporting your data as a backup.
 
@@ -65,7 +66,7 @@ Starflare can be easily deployed to Cloudflare Pages. Follow these steps:
 
 5. **Configure `.env`:**
     *   In your forked repository, edit the file `main/.env`.
-    *   Update the `VITE_CLIENT_ID` and `VITE_CLIENT_SECRET` values with your GitHub OAuth App's credentials.
+    *   Update the `VUE_APP_CLIENT_ID` values with your GitHub OAuth App's credentials.
 
 6. **Deploy and Enjoy!**
     *   Commit and push the changes to your forked repository. Cloudflare Pages will automatically build and deploy your Starflare instance.
@@ -106,6 +107,4 @@ Here are some other projects that offer similar functionality:
 
 Contributions are welcome! If you have any ideas, bug fixes, or feature requests, please feel free to open an issue or submit a pull request.
 
-## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/nieheyong/starflare/blob/main/LICENSE) file for details.
